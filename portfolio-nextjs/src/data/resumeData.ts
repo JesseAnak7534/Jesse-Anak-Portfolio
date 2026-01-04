@@ -1,0 +1,436 @@
+export const resumeData = {
+  personal: {
+    name: "Jesse Azebiik Anak",
+    headline: "Data Analyst | Researcher | Bioinformatics Specialist",
+    dob: "03/21/1998",
+    nationality: "Ghanaian",
+    phone: "(+233) 559759592",
+    email: "jesseanak98@gmail.com",
+    orcid: "https://orcid.org/0000-0003-2104-0178",
+    linkedin: "https://www.linkedin.com/in/jesse-anak-31846a145",
+    googleScholar: "https://scholar.google.com/citations?user=E5g3SVcAAAAJ&hl=en",
+    location: "Central Region, Cape Coast, Ayensu",
+    address: "N568, BlueJay Street, CC-249-6252",
+    availability: "Open to remote junior data analyst roles",
+  },
+
+  aboutMe: `I am a motivated postgraduate researcher with a passion for problem-solving and a strong background in microbiology, molecular techniques, and data-driven research. My interests span antimicrobial resistance, bioinformatics, biotechnology, cell biology, public health, pharmacology, immunology, and child development. With experience in public health, pharmacology, bioinformatics, data science and microbiology and conducting interdisciplinary research, I am committed to advancing scientific knowledge and contributing to societal well-being through impactful research and innovation.`,
+
+  education: [
+    {
+      institution: "Institute of Tropical Medicine",
+      location: "Antwerp, Belgium",
+      degree: "Molecular Data for Infectious Disease",
+      dates: "2025 to date",
+      details: [],
+    },
+    {
+      institution: "University of Cape Coast",
+      location: "Cape Coast, Ghana",
+      degree: "MPhil Infection and Immunity",
+      dates: "01/2022 – 11/2024",
+      details: [],
+    },
+    {
+      institution: "University of Cape Coast",
+      location: "Cape Coast, Ghana",
+      degree: "Chemistry",
+      dates: "08/2016 – 07/2020",
+      details: [],
+    },
+    {
+      institution: "Sandema Senior High Technical School",
+      location: "Sandema, Ghana",
+      degree: "General Science",
+      dates: "11/2012 – 05/2015",
+      details: [],
+    },
+  ],
+
+  skills: {
+    digitalDataTools: [
+      "AI-Powered Web Development",
+      "R programming",
+      "Python",
+      "MySQL",
+      "Machine/Deep learning",
+      "Cloud computing",
+      "Power BI",
+      "Tableau",
+      "Minitab",
+      "Proficient in AI tools",
+      "Data analysis/visualization",
+      "SPSS",
+      "STATA",
+      "Graphic Design",
+      "Video/virtual conferencing",
+      "Project management",
+      "Cybersecurity awareness",
+      "GraphPad Prism",
+      "Origin Pro",
+      "QGIS/GIS",
+    ],
+    socialMediaSkills: [
+      "Effective Communication",
+      "Team Collaboration",
+      "Project Coordination",
+      "Adaptability",
+      "Social media management",
+      "Email marketing and digital outreach",
+      "Digital document editing and formatting",
+      "Automation of workflows and tasks",
+      "Search engine optimization (SEO)",
+      "Spatial mapping",
+      "Conflict Resolution",
+    ],
+    otherCoreCompetencies: [
+      "Molecular techniques",
+      "Bioinformatics",
+      "DNA extraction & sequencing",
+      "Protein-Protein Interaction analysis",
+      "Data science and analytics",
+      "HPLC",
+      "Mass spectroscopy",
+      "LAMP assay",
+      "Quantitative research",
+      "Qualitative research",
+      "Teamwork",
+      "Educational research",
+    ],
+  },
+
+  nationalProject: {
+    title: "Antimicrobial Resistance (AMR) Surveillance Data System – Ghana",
+    role: "System Developer / Data Analyst",
+    year: "2025",
+    summary: "Designed and implemented a centralized data surveillance system to support antimicrobial resistance monitoring across reference laboratories and sentinel sites in Ghana.",
+    features: [
+      "Developed a structured data collection framework using KoboToolbox and Google Sheets to capture laboratory, epidemiological, and geospatial data.",
+      "Designed relational datasets with unique identifiers to enable longitudinal tracking of isolates, resistance patterns, and site-level indicators.",
+      "Integrated automated data validation, cleaning, and consistency checks to improve data quality and reduce reporting errors.",
+      "Implemented dashboards and analytical outputs to summarize resistance trends, sample volumes, and site performance.",
+      "Supporting interoperability with external systems to enable timely reporting and data-driven decision-making for AMR surveillance.",
+    ],
+    tools: ["Python", "KoboToolbox", "Google Sheets", "Dashboard Analytics", "Data Validation Systems"],
+    caseStudy: {
+      problem: "Ghana lacked a centralized system for tracking antimicrobial resistance patterns across laboratories, leading to fragmented data and delayed public health responses.",
+      approach: "Designed a multi-site data collection and surveillance framework integrating reference laboratories and sentinel sites.",
+      dataPipeline: "Implemented automated data flows from KoboToolbox forms to Google Sheets with validation rules, unique identifiers for longitudinal tracking, and geospatial tagging.",
+      validation: "Built-in consistency checks, automated cleaning routines, and error flagging to ensure data quality before analysis.",
+      dashboards: "Created analytical dashboards summarizing resistance trends, sample volumes, site performance, and outbreak indicators.",
+      results: "Enabled timely reporting, improved data quality, and supported evidence-based AMR surveillance decision-making across Ghana.",
+    },
+  },
+
+  experience: [
+    {
+      organization: "Noguchi Memorial Institute for Medical Research",
+      title: "Research Assistant",
+      dates: "05/2024 – Date",
+      category: ["Research", "Bioinformatics", "Data"],
+      projects: [
+        "Antimicrobial Routine Surveillance in the Burns Unit of Korle Bu Teaching Hospital",
+        "Epidemiological success of Staphylococcus aureus ST88 in Buruli ulcer wounds",
+      ],
+      duties: [
+        "Monitoring infections in burn patients by tracking bacterial cultures and antibiotic treatments as part of routine antimicrobial surveillance",
+        "Researching the prevalence and resistance patterns of Staphylococcus aureus ST88 in Buruli ulcer wounds",
+        "Growing and preparing bacterial cells for inoculation in wound models and performing bacterial enumeration in harvested tissue",
+        "Measuring the optical density of bacterial samples using the Tecan Spark instrument",
+        "Analyzing whole genome sequence data to identify genetic backgrounds, virulence factors, and antibiotic resistance genes using bioinformatics tools such as Geneious Prime",
+      ],
+      highlights: [
+        "Analyzing whole genome sequence data to identify genetic backgrounds, virulence factors, and antibiotic resistance genes",
+        "Monitoring infections in burn patients as part of routine antimicrobial surveillance",
+        "Researching the prevalence and resistance patterns of Staphylococcus aureus ST88",
+      ],
+    },
+    {
+      organization: "University of Ghana, School of Public Health",
+      title: "Research Assistant / Technical Officer – Central Region",
+      dates: "02/2025 – 10/2025",
+      category: ["Research", "Data"],
+      projects: [
+        "Mapping and Size Estimation of People Who Inject Drugs (PWIDs) and Bio-Behavioural Survey (BBS) among PUDs in Ghana",
+      ],
+      duties: [
+        "Served as Technical Officer for the Central Region, overseeing all field research operations and ensuring adherence to national protocols for mapping and size estimation of PWIDs and PUDs",
+        "Facilitated consultative meetings with regional health directorates, law enforcement agencies, community-based organizations, and rehabilitation centres to build stakeholder support and ensure ethical conduct of field activities",
+        "Identified and verified drug use and injection hotspots across selected districts through field reconnaissance, key informant interviews, and community validation exercises",
+        "Participated in implementing the capture–recapture methodology for population size estimation, including data collection, tagging, and validation to determine the prevalence of PWIDs and PUDs in the region",
+        "Conducted structured interviews using REDCap electronic data collection tools to capture socio-demographic, behavioural, health-related data from respondents",
+        "Performed HIV, Hepatitis B and C, and Syphilis testing, ensuring accurate recording, confidentiality, and post-test counselling in line with ethical standards",
+        "Ensured data completeness, accuracy, and compliance with project standard operating procedures; contributed to daily debriefing and reporting to the national coordination team",
+        "Assisted in sensitizing target populations on harm reduction, safer practices, and available health and social support services",
+      ],
+      highlights: [
+        "Served as Technical Officer overseeing all field research operations for the Central Region",
+        "Implemented capture–recapture methodology for population size estimation",
+        "Conducted HIV, Hepatitis B and C, and Syphilis testing with ethical post-test counselling",
+      ],
+    },
+    {
+      organization: "Centre for Learning and Childhood Development, Ghana",
+      title: "Research Assistant – Unpaired Care Work Project",
+      dates: "10/2024 – 11/2024",
+      category: ["Research", "Data"],
+      projects: ["Unpaired Care Work Project"],
+      duties: [
+        "Collected quality survey data from participants into KoboCollect",
+        "Maintained proper management of research files, including consent forms and other study-related documents",
+        "Adhered to all ethical guidelines and confidentiality requirements in accordance with the study protocol",
+        "Engaged in regular team meetings to review progress, discuss challenges, and receive ongoing training",
+        "Support other study-related tasks as directed by the research team",
+      ],
+      highlights: [
+        "Collected quality survey data using KoboCollect",
+        "Maintained proper management of research files and consent forms",
+        "Adhered to ethical guidelines and confidentiality requirements",
+      ],
+    },
+    {
+      organization: "Language of Education Project, UCC, Ghana",
+      title: "Project Statistician",
+      dates: "07/2023 – 08/2024",
+      category: ["Data", "Research"],
+      projects: ["Language of Education Project"],
+      duties: [
+        "Conduct comprehensive analysis to support project objectives",
+        "Oversee data entry, management, and reporting processes",
+        "Create clear and impactful visual representations of data findings",
+        "Design and maintain a functional and user-friendly project website",
+        "Provide statistical expertise and technical support for informed decision-making",
+        "Prepared comprehensive statistical reports and documentation",
+      ],
+      highlights: [
+        "Designed and maintained a functional project website",
+        "Created impactful visual representations of data findings",
+        "Provided statistical expertise for informed decision-making",
+      ],
+    },
+    {
+      organization: "PROMPT-Ghana Project on Child Development",
+      title: "Research Assistant and Project Statistician",
+      dates: "03/2024 – 11/2024",
+      category: ["Data", "Research"],
+      projects: ["PROMPT-Ghana Project on Child Development"],
+      duties: [
+        "Analysed data collected during the app pilot to evaluate usability and effectiveness",
+        "Provided statistical input for structuring the app pilot to ensure meaningful data collection",
+        "Analysed feedback from children during the workshop to identify areas for app improvement",
+        "Generated statistical reports summarizing findings and insights from the pilot study",
+      ],
+      highlights: [
+        "Analysed app pilot data to evaluate usability and effectiveness",
+        "Generated statistical reports summarizing pilot study findings",
+        "Analysed feedback from children to identify app improvements",
+      ],
+    },
+    {
+      organization: "Noguchi Memorial Institute for Medical Research",
+      title: "Research Assistant",
+      dates: "02/2023 – 12/2023",
+      category: ["Research", "Bioinformatics", "Data"],
+      projects: ["Antimicrobial Resistance Research"],
+      duties: [
+        "Worked as senior bioinformatician and lead data analyst",
+        "Isolated and cultured bacteria from the blood, wound, and nasal samples of burn patients",
+        "Prepared various culture media for bacterial growth",
+        "Performed Gram staining and microscopy for bacterial identification",
+        "Conducted antimicrobial susceptibility tests using the Kirby Bauer method",
+        "Identified bacterial strains using Maldi-Tof MS",
+        "Performed plasmid and DNA extraction on clinical samples",
+        "Identified resistant/virulent genes of bacteria isolates using bioinformatics tools",
+      ],
+      highlights: [
+        "Worked as senior bioinformatician and lead data analyst",
+        "Identified resistant/virulent genes using bioinformatics tools",
+        "Conducted antimicrobial susceptibility tests using Kirby Bauer method",
+      ],
+    },
+    {
+      organization: "School of Public Health, University of Ghana",
+      title: "Research Assistant – MEN'S Project",
+      dates: "09/2022 – 05/2023",
+      category: ["Research", "Data"],
+      projects: ["MEN'S Project"],
+      duties: [
+        "Analysed and interpreted data to provide insights and support further decisions",
+        "Conducted interviews with participants at the various study settings",
+        "Conducted surveys and case analysis",
+        "Prepared weekly reports and present progress to the PI",
+        "Transcribed audio interviews into text (English)",
+      ],
+      highlights: [
+        "Analysed and interpreted data to provide actionable insights",
+        "Conducted interviews and surveys at various study settings",
+        "Prepared weekly progress reports for the Principal Investigator",
+      ],
+    },
+    {
+      organization: "University of Cape Coast, Chemistry Department",
+      title: "Teaching Assistant",
+      dates: "09/2020 – 08/2021",
+      category: ["Teaching"],
+      projects: ["Undergraduate Chemistry Instruction"],
+      duties: [
+        "Routinely assisted my supervisors with teaching activities in organic and physical chemistry",
+        "Responsible for undergraduate organic and physical chemistry lab sections, scoring lab reports and providing valid feedback to practical course coordinators",
+        "Hold office hours and/or monitor online discussion forum",
+        "Conduct tutorials, mark assignments and tests and provide sufficient feedback to supervisors",
+      ],
+      highlights: [
+        "Responsible for undergraduate organic and physical chemistry lab sections",
+        "Conducted tutorials and marked assignments with detailed feedback",
+        "Assisted supervisors with teaching activities in chemistry",
+      ],
+    },
+  ],
+
+  conferences: [
+    {
+      title: "14th Convention for Biomedical Research, Ghana Conference - NMIMR",
+      dates: "28/08/2024 – 30/08/2024",
+      details: [
+        'Presented on "In-vitro antibacterial and synergistic activity of Pyrazolyl sulphonamide derivatives against Staphylococcus haemolyticus"',
+      ],
+    },
+    {
+      title: "Introduction to Biomedical and Health Research (B-HERE) – Zoom cloud",
+      dates: "02/05/2023 – 04/05/2023",
+      details: [
+        "Introduction to biomedical and health research",
+        "Introduction to American Society for Microbiology (ASM) and opportunities with ASM health research ethics",
+      ],
+    },
+    {
+      title: "Biosafety, Biosecurity and Good Laboratory Practices",
+      dates: "02/2023",
+      details: [],
+    },
+    {
+      title: "Strengthening and building research capacities using LAMP technique as a prototype for detecting pathogens",
+      dates: "13/02/2023 – 16/02/2023",
+      details: [
+        "Principles of LAMP assay",
+        "Primer design",
+        "Development of LAMP test in and for resource limited settings",
+        "Hand-based experience of LAMP for pathogen detection",
+      ],
+    },
+    {
+      title: "Laboratory Management and Safety Workshop",
+      dates: "01/11/2020 – 05/11/2020",
+      details: [
+        "Hands-on practice with HPLC, Mass Spectroscopy, etc.",
+        "Exposition of all laboratory signs and general laboratory safety measures",
+        "Laboratory Management Information System (MIS)",
+      ],
+    },
+    {
+      title: "Workshop on data analysis using SPSS and R Programming",
+      dates: "08/08/2016 – 12/08/2016",
+      details: [],
+    },
+  ],
+
+  publications: [
+    {
+      title: "Essential minerals in colostrum of preterm and full-term Ghanaian mothers and related maternal factors",
+      year: "2025",
+      keywords: ["Colostrum", "Minerals", "Maternal Health", "Ghana"],
+    },
+    {
+      title: "In-vitro Antibacterial and Synergistic Activity of Pyrazolyl Sulphonamide Derivatives against Staphylococcus Haemolyticus",
+      year: "2024",
+      keywords: ["Antibacterial", "Pyrazolyl Sulphonamide", "Staphylococcus", "Synergistic Activity"],
+    },
+    {
+      title: "Assessing the Outcome of PMTCT of HIV Therapy at the Eastern Regional Hospital, Ghana",
+      year: "2023",
+      keywords: ["PMTCT", "HIV", "Therapy", "Ghana"],
+    },
+    {
+      title: "Assessing the Implementation of PMTCT of HIV therapy at Atua Government Hospital, Ghana",
+      year: "2023",
+      keywords: ["PMTCT", "HIV", "Implementation", "Ghana"],
+    },
+    {
+      title: "The Essence of Nourishment: Tracing the Levels of Essential Elements in the Colostrum Milk of Full-Term Mothers",
+      year: "2023",
+      keywords: ["Colostrum", "Essential Elements", "Nourishment", "Maternal Health"],
+    },
+    {
+      title: "Emergency Preparedness of Nurses and Midwives in Accra, Ghana",
+      year: "2023",
+      keywords: ["Emergency Preparedness", "Nurses", "Midwives", "Accra"],
+    },
+  ],
+
+  leadership: [
+    {
+      position: "President of Builsa Students Union - UCC",
+      year: "2019",
+      duties: [
+        "Co-ordinate the overall work of the Students' Union",
+        "Manage the SU budget and associated finances",
+        "Represent the Students Union at appropriate forums",
+        "Manage the day-to-day running of the SU events and activities",
+        "Work collaboratively with the student unions Team to promote student engagement",
+      ],
+    },
+  ],
+
+  memberships: [
+    {
+      organization: "Convention For Biomedical Research Ghana (CoBREG)",
+      dates: "2023 – present",
+    },
+    {
+      organization: "American Society of Microbiology - USA",
+      dates: "2023 – present",
+    },
+    {
+      organization: "European Society of Clinical Microbiology and Infectious Diseases",
+      dates: "2024 – present",
+    },
+  ],
+
+  hobbies: ["Reading", "Music", "Driving", "Watching Movies"],
+
+  referees: [
+    {
+      name: "Prof. Nicolas T.K.D. Dayie",
+      organization: "University of Ghana Medical School",
+      address: "P.O. Box 4236, Korle-Bu Accra",
+      email: "ntkddayie@ug.edu.gh",
+      phone: "(+233) 0208449415",
+    },
+    {
+      name: "Prof. Dorcas Obiri Yeboah",
+      organization: "University of Cape Coast, School of Medical Sciences, Department of Microbiology and Immunology",
+      email: "dobiri-yeboah@ucc.edu.gh",
+      phone: "(+233) 244527387",
+    },
+    {
+      name: "Dr. Ewura Seidu Yahaya",
+      organization: "University of Cape Coast, School of Medical Sciences, Department of Pharmacology",
+      email: "e.s.yahaya@ucc.edu.gh",
+      phone: "(+233) 244620412",
+    },
+    {
+      name: "Dr. Nana Ama Amissah",
+      organization: "Noguchi Memorial Institute for Medical Research, Department of Bacteriology",
+      email: "namissah@noguchi.ug.edu.gh",
+      phone: "(+233) 549420298",
+    },
+  ],
+
+  quickStats: {
+    areas: ["Public Health", "Biomedical Research", "Social Research", "Bioinformatics"],
+    tools: ["Python", "R", "SQL", "Power BI", "Tableau", "SPSS", "STATA"],
+    yearsExperience: "5+",
+  },
+}
+
+export type ResumeData = typeof resumeData
