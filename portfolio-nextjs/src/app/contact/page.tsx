@@ -7,10 +7,10 @@ import { PageWrapper, Section, Card } from '@/components/UI';
 import { Mail, Phone, MapPin, ExternalLink, Send, Copy, Check, Loader2, AlertCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-// EmailJS Configuration - Replace these with your actual credentials
-const EMAILJS_SERVICE_ID = 'service_portfolio'; // Your EmailJS service ID
-const EMAILJS_TEMPLATE_ID = 'template_contact'; // Your EmailJS template ID
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY'; // Your EmailJS public key
+// EmailJS Configuration
+const EMAILJS_SERVICE_ID = 'service_c5jz6rh';
+const EMAILJS_TEMPLATE_ID = 'template_5msndh9';
+const EMAILJS_PUBLIC_KEY = 'nRGWJXS-PPpZO4nM2';
 
 export default function ContactPage() {
   const { personal } = resumeData;
