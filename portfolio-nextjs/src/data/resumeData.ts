@@ -8,7 +8,7 @@ export const resumeData = {
     email: "jesseanak98@gmail.com",
     orcid: "https://orcid.org/0000-0003-2104-0178",
     linkedin: "https://www.linkedin.com/in/jesse-anak-31846a145",
-    googleScholar: "https://scholar.google.com/citations?user=E5g3SVcAAAAJ&hl=en",
+    googleScholar: "https://scholar.google.com/citations?hl=en&user=XzvkYf0AAAAJ",
     location: "Central Region, Cape Coast, Ayensu",
     address: "N568, BlueJay Street, CC-249-6252",
     availability: "Open to Data Science roles, research collaboration, Web Development and many more",
