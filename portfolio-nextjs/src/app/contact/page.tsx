@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { resumeData } from '@/data/resumeData';
 import { PageWrapper, Section, Card } from '@/components/UI';
@@ -26,6 +26,11 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  }, []);
+
   const copyEmail = async () => {
     await navigator.clipboard.writeText(personal.email);
     setCopied(true);
@@ -38,19 +43,15 @@ export default function ContactPage() {
     setError(null);
     
     try {
-      // Send email using EmailJS
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        {
-          from_name: formState.name,
-          from_email: formState.email,
-          subject: formState.subject,
-          message: formState.message,
-          to_name: 'Jesse Azebiik Anak',
-        },
-        EMAILJS_PUBLIC_KEY
-      );
+      // Send email using EmailJS sendForm method
+      if (formRef.current) {
+        await emailjs.sendForm(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          EMAILJS_PUBLIC_KEY
+        );
+      }
       
       setSubmitted(true);
       setFormState({ name: '', email: '', subject: '', message: '' });
@@ -193,30 +194,30 @@ export default function ContactPage() {
                 )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label htmlFor="from_name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                       Name *
                     </label>
                     <input
                       type="text"
-                      id="name"
-                      name="name"
+                      id="from_name"
+                      name="from_name"
                       required
                       value={formState.name}
-                      onChange={handleChange}
+                      onChange={(e) => setFormState(prev => ({ ...prev, name: e.target.value }))}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                    <label htmlFor="from_email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
                       Email *
                     </label>
                     <input
                       type="email"
-                      id="email"
-                      name="email"
+                      id="from_email"
+                      name="from_email"
                       required
                       value={formState.email}
-                      onChange={handleChange}
+                      onChange={(e) => setFormState(prev => ({ ...prev, email: e.target.value }))}
                       className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                     />
                   </div>
@@ -232,7 +233,7 @@ export default function ContactPage() {
                     name="subject"
                     required
                     value={formState.subject}
-                    onChange={handleChange}
+                    onChange={(e) => setFormState(prev => ({ ...prev, subject: e.target.value }))}
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                   />
                 </div>
@@ -247,7 +248,7 @@ export default function ContactPage() {
                     rows={5}
                     required
                     value={formState.message}
-                    onChange={handleChange}
+                    onChange={(e) => setFormState(prev => ({ ...prev, message: e.target.value }))}
                     className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
                   />
                 </div>
