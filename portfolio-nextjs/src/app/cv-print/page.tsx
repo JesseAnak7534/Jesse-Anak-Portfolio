@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { resumeData } from '@/data/resumeData'
 import { useEffect } from 'react'
 
@@ -35,23 +36,51 @@ export default function CVPrintPage() {
       `}</style>
 
       <div className="max-w-4xl mx-auto p-8 print:p-0">
-        {/* Header / Personal Info */}
-        <header className="text-center border-b-2 border-emerald-600 pb-6 mb-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            {resumeData.personal.name}
-          </h1>
-          <p className="text-lg text-emerald-700 font-medium mb-4">
-            {resumeData.personal.headline}
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-            <span>📧 {resumeData.personal.email}</span>
-            <span>📱 {resumeData.personal.phone}</span>
-            <span>📍 {resumeData.personal.location}</span>
-          </div>
-          <div className="text-sm text-gray-500 mt-2">
-            <a href={resumeData.personal.orcid} className="text-emerald-600 hover:underline">
-              ORCID: {resumeData.personal.orcid.split('/').pop()}
-            </a>
+        {/* Header / Personal Info with Profile Image */}
+        <header className="border-b-2 border-emerald-600 pb-6 mb-6">
+          <div className="flex items-start gap-6">
+            {/* Profile Image */}
+            <div className="flex-shrink-0">
+              <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-emerald-600">
+                <Image
+                  src="/images/profile.jpg"
+                  alt={resumeData.personal.name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            
+            {/* Personal Details */}
+            <div className="flex-1">
+              <h1 className="text-3xl font-bold text-gray-900 mb-1">
+                {resumeData.personal.name}
+              </h1>
+              <p className="text-lg text-emerald-700 font-medium mb-3">
+                {resumeData.personal.headline}
+              </p>
+              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+                <span>📧 {resumeData.personal.email}</span>
+                <span>📱 {resumeData.personal.phone}</span>
+                <span>📍 {resumeData.personal.location}</span>
+                <span>🌍 {resumeData.personal.nationality}</span>
+              </div>
+              <div className="flex flex-wrap gap-4 text-sm text-gray-500 mt-2">
+                <a href={resumeData.personal.orcid} className="text-emerald-600 hover:underline">
+                  ORCID
+                </a>
+                <a href={resumeData.personal.linkedin} className="text-emerald-600 hover:underline">
+                  LinkedIn
+                </a>
+                <a href={resumeData.personal.googleScholar} className="text-emerald-600 hover:underline">
+                  Google Scholar
+                </a>
+              </div>
+              <p className="text-sm text-gray-500 mt-2">
+                <strong>Availability:</strong> {resumeData.personal.availability}
+              </p>
+            </div>
           </div>
         </header>
 
