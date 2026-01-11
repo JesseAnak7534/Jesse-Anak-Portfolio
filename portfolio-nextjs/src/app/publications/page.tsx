@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { resumeData } from '@/data/resumeData';
 import { PageWrapper, Section, Badge, Chip, BulletList } from '@/components/UI';
 import { AccordionGroup, AccordionItem } from '@/components/Accordion';
-import { FileText, Presentation, Search, X, Tag } from 'lucide-react';
+import { FileText, Presentation, Search, X, Tag, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function PublicationsPage() {
@@ -142,6 +142,21 @@ export default function PublicationsPage() {
                       <p className="text-sm text-gray-600 dark:text-gray-400">
                         Published: {pub.year}
                       </p>
+
+                      {/* Link to Publication */}
+                      {pub.link && (
+                        <div>
+                          <a
+                            href={pub.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+                          >
+                            <ExternalLink size={16} />
+                            View Publication
+                          </a>
+                        </div>
+                      )}
 
                       {/* Keywords */}
                       {pub.keywords && pub.keywords.length > 0 && (

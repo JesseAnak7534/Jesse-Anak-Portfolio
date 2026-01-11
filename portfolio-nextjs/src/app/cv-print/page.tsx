@@ -157,7 +157,15 @@ export default function CVPrintPage() {
             {resumeData.publications.map((pub, i) => (
               <li key={i} className="flex gap-2">
                 <span className="text-gray-400">[{i + 1}]</span>
-                <span>{pub.title} ({pub.year})</span>
+                <span>
+                  {pub.link ? (
+                    <a href={pub.link} className="text-emerald-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                      {pub.title}
+                    </a>
+                  ) : (
+                    pub.title
+                  )} ({pub.year})
+                </span>
               </li>
             ))}
           </ul>

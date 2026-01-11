@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { resumeData } from '@/data/resumeData';
 import { PageWrapper, Section, Badge, BulletList } from '@/components/UI';
 import { AccordionGroup, AccordionItem } from '@/components/Accordion';
@@ -12,12 +13,28 @@ export default function AboutPage() {
       title="About Me"
       subtitle="Get to know more about my background, interests, and professional affiliations."
     >
-      {/* About Text */}
+      {/* About Section with Image */}
       <Section>
-        <div className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-            {aboutMe}
-          </p>
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          {/* Profile Image */}
+          <div className="flex-shrink-0">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-xl border-4 border-primary/20">
+              <Image
+                src="/images/profile.jpg"
+                alt={personal.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
+          
+          {/* About Text */}
+          <div className="flex-1 prose prose-lg dark:prose-invert max-w-none">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+              {aboutMe}
+            </p>
+          </div>
         </div>
       </Section>
 

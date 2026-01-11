@@ -11,17 +11,24 @@ export const resumeData = {
     googleScholar: "https://scholar.google.com/citations?user=E5g3SVcAAAAJ&hl=en",
     location: "Central Region, Cape Coast, Ayensu",
     address: "N568, BlueJay Street, CC-249-6252",
-    availability: "Open to remote junior data analyst roles",
+    availability: "Open to Data Science roles, research collaboration, Web Development and many more",
   },
 
   aboutMe: `I am a motivated postgraduate researcher with a passion for problem-solving and a strong background in microbiology, molecular techniques, and data-driven research. My interests span antimicrobial resistance, bioinformatics, biotechnology, cell biology, public health, pharmacology, immunology, and child development. With experience in public health, pharmacology, bioinformatics, data science and microbiology and conducting interdisciplinary research, I am committed to advancing scientific knowledge and contributing to societal well-being through impactful research and innovation.`,
 
   education: [
     {
+      institution: "University of Ghana",
+      location: "Accra, Ghana",
+      degree: "PhD Biotechnology",
+      dates: "2025 to date",
+      details: [],
+    },
+    {
       institution: "Institute of Tropical Medicine",
       location: "Antwerp, Belgium",
       degree: "Molecular Data for Infectious Disease",
-      dates: "2025 to date",
+      dates: "2025",
       details: [],
     },
     {
@@ -339,31 +346,61 @@ export const resumeData = {
       title: "Essential minerals in colostrum of preterm and full-term Ghanaian mothers and related maternal factors",
       year: "2025",
       keywords: ["Colostrum", "Minerals", "Maternal Health", "Ghana"],
+      link: "https://www.nature.com/articles/s41598-025-15815-x",
     },
     {
-      title: "In-vitro Antibacterial and Synergistic Activity of Pyrazolyl Sulphonamide Derivatives against Staphylococcus Haemolyticus",
+      title: "Assessing the Impact of Improved Pre-analytic Tissue Handling on Immunohistochemistry and Breast Cancer Molecular Subtypes in Ghana: A Cross-Sectional Study",
+      year: "2025",
+      keywords: ["Immunohistochemistry", "Breast Cancer", "Molecular Subtypes", "Ghana"],
+      link: "https://www.researchsquare.com/article/rs-6672326/latest",
+    },
+    {
+      title: "In vitro antibacterial and synergistic activity of pyrazolyl sulphonamide derivatives against Staphylococcus haemolyticus",
       year: "2024",
       keywords: ["Antibacterial", "Pyrazolyl Sulphonamide", "Staphylococcus", "Synergistic Activity"],
+      link: "https://www.japtronline.com/index.php/joapr/article/view/658",
     },
     {
-      title: "Assessing the Outcome of PMTCT of HIV Therapy at the Eastern Regional Hospital, Ghana",
-      year: "2023",
-      keywords: ["PMTCT", "HIV", "Therapy", "Ghana"],
+      title: "Modified Sulfonamides as Alternative Antibacterials: Activity of Novel Pyrazole Sulfonamides and their Corresponding Palladium Complexes",
+      year: "2024",
+      keywords: ["Sulfonamides", "Antibacterials", "Pyrazole", "Palladium Complexes"],
+      link: "https://ir.ucc.edu.gh/xmlui/handle/123456789/11981",
     },
     {
-      title: "Assessing the Implementation of PMTCT of HIV therapy at Atua Government Hospital, Ghana",
-      year: "2023",
-      keywords: ["PMTCT", "HIV", "Implementation", "Ghana"],
-    },
-    {
-      title: "The Essence of Nourishment: Tracing the Levels of Essential Elements in the Colostrum Milk of Full-Term Mothers",
+      title: "The Essence of Nourishment: Tracing the Levels of Essential Mineral Elements in the Colostrum Milk of Full-Term Mothers",
       year: "2023",
       keywords: ["Colostrum", "Essential Elements", "Nourishment", "Maternal Health"],
+      link: "https://www.researchsquare.com/article/rs-4847914/latest",
+    },
+    {
+      title: "The Essence of Nourishment: Tracing the Levels of Essential Elements in the Colostrum Milk of Full-Term Mothers (SSRN)",
+      year: "2023",
+      keywords: ["Colostrum", "Essential Elements", "Nourishment", "Maternal Health"],
+      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582303",
+    },
+    {
+      title: "Assessing The Outcome Of PMTCT Of HIV Therapy At The Eastern Regional Hospital, Ghana",
+      year: "2023",
+      keywords: ["PMTCT", "HIV", "Therapy", "Ghana"],
+      link: "http://ajhsjournal.ph/index.php/gp/article/view/61",
+    },
+    {
+      title: "Assessing the Implementation of PMTCT of HIV Therapy at Atua Government Hospital, Ghana",
+      year: "2023",
+      keywords: ["PMTCT", "HIV", "Implementation", "Ghana"],
+      link: "http://ajhsjournal.ph/index.php/gp/article/view/80",
     },
     {
       title: "Emergency Preparedness of Nurses and Midwives in Accra, Ghana",
       year: "2023",
       keywords: ["Emergency Preparedness", "Nurses", "Midwives", "Accra"],
+      link: "http://ajhsjournal.ph/index.php/gp/article/view/64",
+    },
+    {
+      title: "Exploring Challenges and Prospects of Solar Energy Entrepreneurship of Accra Metropolis in Ghana",
+      year: "2023",
+      keywords: ["Solar Energy", "Entrepreneurship", "Renewable Energy", "Ghana"],
+      link: "https://www.academia.edu/download/106247138/59.pdf",
     },
   ],
 
