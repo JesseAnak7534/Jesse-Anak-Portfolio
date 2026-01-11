@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { resumeData } from '@/data/resumeData'
 import { useEffect } from 'react'
 
@@ -19,12 +18,14 @@ export default function CVPrintPage() {
       <style jsx global>{`
         @media print {
           @page {
-            margin: 0.75in;
+            margin: 0.5in;
             size: A4;
           }
           body {
             -webkit-print-color-adjust: exact;
             print-color-adjust: exact;
+            margin: 0;
+            padding: 0;
           }
           .page-break {
             page-break-before: always;
@@ -32,52 +33,69 @@ export default function CVPrintPage() {
           .no-break {
             page-break-inside: avoid;
           }
+          .print-header {
+            display: flex !important;
+            visibility: visible !important;
+          }
+          .profile-img {
+            width: 80px !important;
+            height: 80px !important;
+            border-radius: 50% !important;
+            border: 2px solid #059669 !important;
+            object-fit: cover !important;
+          }
+        }
+        @media screen {
+          .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 2px solid #059669;
+            object-fit: cover;
+          }
         }
       `}</style>
 
-      <div className="max-w-4xl mx-auto p-8 print:p-0">
+      <div className="max-w-4xl mx-auto p-8 print:p-0 print:max-w-none">
         {/* Header / Personal Info with Profile Image */}
-        <header className="border-b-2 border-emerald-600 pb-6 mb-6">
+        <header className="print-header border-b-2 border-emerald-600 pb-6 mb-6">
           <div className="flex items-start gap-6">
-            {/* Profile Image */}
+            {/* Profile Image - using regular img for print compatibility */}
             <div className="flex-shrink-0">
-              <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-emerald-600">
-                <Image
-                  src="/images/profile.jpg"
-                  alt={resumeData.personal.name}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/profile.jpg"
+                alt={resumeData.personal.name}
+                className="profile-img"
+              />
             </div>
             
             {/* Personal Details */}
             <div className="flex-1">
-              <h1 className="text-3xl font-bold text-gray-900 mb-1">
+              <h1 className="text-3xl font-bold text-gray-900 mb-1 print:text-2xl">
                 {resumeData.personal.name}
               </h1>
-              <p className="text-lg text-emerald-700 font-medium mb-3">
+              <p className="text-lg text-emerald-700 font-medium mb-3 print:text-base print:mb-2">
                 {resumeData.personal.headline}
               </p>
-              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
+              <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 print:text-xs print:gap-1">
                 <span>📧 {resumeData.personal.email}</span>
                 <span>📱 {resumeData.personal.phone}</span>
                 <span>📍 {resumeData.personal.location}</span>
                 <span>🌍 {resumeData.personal.nationality}</span>
               </div>
-              <div className="flex flex-wrap gap-4 text-sm text-gray-500 mt-2">
-                <a href={resumeData.personal.orcid} className="text-emerald-600 hover:underline">
+              <div className="flex flex-wrap gap-4 text-sm text-gray-500 mt-2 print:text-xs print:gap-2 print:mt-1">
+                <a href={resumeData.personal.orcid} className="text-emerald-600">
                   ORCID
                 </a>
-                <a href={resumeData.personal.linkedin} className="text-emerald-600 hover:underline">
+                <a href={resumeData.personal.linkedin} className="text-emerald-600">
                   LinkedIn
                 </a>
-                <a href={resumeData.personal.googleScholar} className="text-emerald-600 hover:underline">
+                <a href={resumeData.personal.googleScholar} className="text-emerald-600">
                   Google Scholar
                 </a>
               </div>
-              <p className="text-sm text-gray-500 mt-2">
+              <p className="text-sm text-gray-500 mt-2 print:text-xs print:mt-1">
                 <strong>Availability:</strong> {resumeData.personal.availability}
               </p>
             </div>
