@@ -1,7 +1,7 @@
 export const resumeData = {
   personal: {
     name: "Jesse Azebiik Anak",
-    headline: "Data Analyst | Researcher | Bioinformatics Specialist",
+    headline: "Founder, ICBB | Bioinformatics Specialist | Data Scientist | Researcher",
     dob: "03/21/1998",
     nationality: "Ghanaian",
     phone: "(+233) 559759592",
@@ -9,26 +9,20 @@ export const resumeData = {
     orcid: "https://orcid.org/0000-0003-2104-0178",
     linkedin: "https://www.linkedin.com/in/jesse-anak-31846a145",
     googleScholar: "https://scholar.google.com/citations?hl=en&user=XzvkYf0AAAAJ",
+    portfolio: "https://jesseanak.com",
     location: "Central Region, Cape Coast, Ayensu",
     address: "N568, BlueJay Street, CC-249-6252",
     availability: "Open to Data Science roles, research collaboration, Web Development and many more",
   },
 
-  aboutMe: `I am a motivated postgraduate researcher with a passion for problem-solving and a strong background in microbiology, molecular techniques, and data-driven research. My interests span antimicrobial resistance, bioinformatics, biotechnology, cell biology, public health, pharmacology, immunology, and child development. With experience in public health, pharmacology, bioinformatics, data science and microbiology and conducting interdisciplinary research, I am committed to advancing scientific knowledge and contributing to societal well-being through impactful research and innovation.`,
+  aboutMe: `Founder of the Institute of Computational Biology and Bioinformatics (ICBB), with expertise in antimicrobial resistance surveillance, infection control, and medical microbiology. Experienced in whole genome sequencing analysis, epidemiological research, and developing data-driven tools for public health decision-making. Skilled in bioinformatics, data science, and web development, with interdisciplinary research experience spanning microbiology, pharmacology, immunology, and global health.`,
 
   education: [
-    {
-      institution: "University of Ghana",
-      location: "Accra, Ghana",
-      degree: "PhD Biotechnology",
-      dates: "2025 to date",
-      details: [],
-    },
     {
       institution: "Institute of Tropical Medicine",
       location: "Antwerp, Belgium",
       degree: "Molecular Data for Infectious Disease",
-      dates: "2025",
+      dates: "2025 - 2026",
       details: [],
     },
     {
@@ -41,7 +35,7 @@ export const resumeData = {
     {
       institution: "University of Cape Coast",
       location: "Cape Coast, Ghana",
-      degree: "Chemistry",
+      degree: "Bachelor of Education (SCIENCE)",
       dates: "08/2016 – 07/2020",
       details: [],
     },
@@ -130,6 +124,50 @@ export const resumeData = {
   },
 
   experience: [
+    {
+      organization: "Institute of Computational Biology and Bioinformatics (ICBB)",
+      title: "Founder & Director",
+      dates: "2025 – Date",
+      category: ["Leadership", "Research", "Bioinformatics", "Data"],
+      projects: [
+        "Computational Biology Research Programs",
+        "Bioinformatics Training & Capacity Building",
+        "AI/ML for Biological Research",
+      ],
+      duties: [
+        "Lead research programs in computational biology, bioinformatics, genomics, and biomedical data science",
+        "Provide professional data analysis services including data cleaning, statistical consulting, and bioinformatics analysis to researchers and institutions",
+        "Design and deliver training programs (workshops, short courses, bootcamps) to build capacity in computational biology across Africa",
+        "Apply AI and machine learning algorithms to biological and medical research problems",
+        "Manage collaborations and partnerships with international research institutions",
+      ],
+      highlights: [
+        "Founded and lead ICBB - advancing computational biology research in Africa",
+        "Deliver training programs to build capacity in computational biology",
+        "Apply AI and machine learning to biological research problems",
+      ],
+      website: "https://icbb.vercel.app",
+    },
+    {
+      organization: "AMR Surveillance Dashboard",
+      title: "Lead Developer & Researcher",
+      dates: "2025 – Date",
+      category: ["Development", "Data", "Research"],
+      projects: [
+        "AMR Surveillance Web Application for Ghana",
+      ],
+      duties: [
+        "Designed and built a production-ready Streamlit web application for monitoring antimicrobial resistance (AMR) in environmental and food samples across Ghana",
+        "Implemented interactive dashboards for resistance overview, time-series trend analysis, and geographic hotspot mapping using Plotly, Folium, and Pydeck",
+        "Developed multi-user authentication system with role-based access (admin/lab user) and secure local SQLite data storage",
+        "Built data upload and validation pipeline with strict schema validation and automated error reporting for Excel-based inputs",
+      ],
+      highlights: [
+        "Built production-ready AMR surveillance dashboard for Ghana",
+        "Implemented interactive data visualizations and geographic hotspot mapping",
+        "Developed role-based authentication and secure data storage",
+      ],
+    },
     {
       organization: "Noguchi Memorial Institute for Medical Research",
       title: "Research Assistant",
@@ -244,7 +282,7 @@ export const resumeData = {
         "Isolated and cultured bacteria from the blood, wound, and nasal samples of burn patients",
         "Prepared various culture media for bacterial growth",
         "Performed Gram staining and microscopy for bacterial identification",
-        "Conducted antimicrobial susceptibility tests using the Kirby Bauer method",
+        "Conducted antimicrobial susceptibility tests using Broth Microdilution",
         "Identified bacterial strains using Maldi-Tof MS",
         "Performed plasmid and DNA extraction on clinical samples",
         "Identified resistant/virulent genes of bacteria isolates using bioinformatics tools",
@@ -252,7 +290,7 @@ export const resumeData = {
       highlights: [
         "Worked as senior bioinformatician and lead data analyst",
         "Identified resistant/virulent genes using bioinformatics tools",
-        "Conducted antimicrobial susceptibility tests using Kirby Bauer method",
+        "Conducted antimicrobial susceptibility tests using Broth Microdilution",
       ],
     },
     {

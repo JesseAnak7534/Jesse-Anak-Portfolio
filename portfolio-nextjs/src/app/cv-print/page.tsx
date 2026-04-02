@@ -122,17 +122,7 @@ export default function CVPrintPage() {
               <div key={i} className="no-break">
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="font-semibold text-gray-900">
-                      {edu.degree}
-                      {edu.degree.includes('PhD') && (
-                        <a 
-                          href="#phd-overview" 
-                          className="ml-2 text-xs text-emerald-600 font-normal hover:underline print:text-emerald-700"
-                        >
-                          → View Research Overview
-                        </a>
-                      )}
-                    </h3>
+                    <h3 className="font-semibold text-gray-900">{edu.degree}</h3>
                     <p className="text-sm text-gray-600">{edu.institution}, {edu.location}</p>
                   </div>
                   <span className="text-sm text-gray-500 whitespace-nowrap">{edu.dates}</span>
@@ -291,13 +281,13 @@ export default function CVPrintPage() {
           </div>
         </section>
 
-        {/* PhD Overview */}
+        {/* Research Interest */}
         <section id="phd-overview" className="mb-6 page-break">
           <h2 className="text-lg font-bold text-emerald-700 border-b border-gray-200 pb-1 mb-4">
-            PHD RESEARCH OVERVIEW
+            RESEARCH INTEREST
           </h2>
           
-          {/* PhD Topic */}
+          {/* Research Topic */}
           <div className="mb-4 no-break">
             <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
               <span className="text-emerald-600">🎯</span> Research Topic
@@ -427,8 +417,8 @@ export default function CVPrintPage() {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <p className="font-semibold text-gray-900">{resumeData.personal.name}</p>
-                  <p className="text-gray-600">PhD Candidate, Biotechnology</p>
-                  <p className="text-gray-600">University of Ghana, Accra</p>
+                  <p className="text-gray-600">Founder & Director, ICBB</p>
+                  <p className="text-gray-600">Bioinformatics Specialist | Researcher</p>
                 </div>
                 <div className="text-gray-600">
                   <p>📧 {resumeData.personal.email}</p>
