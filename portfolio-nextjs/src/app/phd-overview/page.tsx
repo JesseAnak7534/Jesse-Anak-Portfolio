@@ -90,7 +90,7 @@ export default function PhDOverviewPage() {
   return (
     <PageWrapper
       title="Research Interest"
-      subtitle="Advancing antimicrobial resistance research through CRISPR-Cas13a technology"
+      subtitle="Advancing antimicrobial resistance (AMR) research through CRISPR-Cas13a technology and computational biology"
     >
       {/* Hero Section - Research Topic */}
       <Section>
@@ -111,7 +111,7 @@ export default function PhDOverviewPage() {
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-sm text-gray-500 dark:text-gray-400">
                   <GraduationCap size={16} />
-                  <span>Research Interest • AMR & CRISPR Technology • Open for Collaboration</span>
+                  <span>PhD Biotechnology • University of Ghana • 2025 – Present</span>
                 </div>
               </div>
             </div>

@@ -44,6 +44,20 @@ export default function EducationPage() {
                     <BulletList items={edu.details} />
                   </div>
                 )}
+
+                {/* PhD Research Link */}
+                {edu.degree.includes('PhD') && (
+                  <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+                    <Link 
+                      href="/phd-overview"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-lg hover:from-emerald-600 hover:to-teal-600 transition-all shadow-md hover:shadow-lg"
+                    >
+                      <BookOpen size={18} />
+                      View Research Overview
+                      <ArrowRight size={16} />
+                    </Link>
+                  </div>
+                )}
               </div>
             </AccordionItem>
           ))}

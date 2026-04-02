@@ -19,6 +19,13 @@ export const resumeData = {
 
   education: [
     {
+      institution: "University of Ghana",
+      location: "Accra, Ghana",
+      degree: "PhD Biotechnology",
+      dates: "2025 - Date",
+      details: [],
+    },
+    {
       institution: "Institute of Tropical Medicine",
       location: "Antwerp, Belgium",
       degree: "Molecular Data for Infectious Disease",
